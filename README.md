@@ -14,11 +14,11 @@ A toy app for election with visualization
 
 ## How to get started with this app
 
-- Clone this repo but first of all it fork it from here on of the icon looking like this
+- Clone this repo but first of all fork it
 
 * Now copy the repo link from green Code button
 
-* Go to use command line and type this
+* Go to your command line and type this
 
   `git clone ________paste the copied link here`
 
@@ -40,6 +40,6 @@ A toy app for election with visualization
 
 - now a new window of chrome with url of localhost:8080 will open
 
-- Enjoy my app 🤗🤗
+- Enjoy the app 🤗🤗
 
-### You contribution is a gift for us and exchanging gift spreads love 💖
+### Your contribution is a gift for us and exchanging gifts spreads love 💖
