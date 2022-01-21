@@ -1,0 +1,82 @@
+@import './../../../globalVariables';
+.overAllVisual {
+  width: 80%;
+  margin: 0 auto;
+
+  color: $primarySkyBlue;
+  .header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    margin-left: 10px;
+  }
+
+  hr {
+    height: 0.1px;
+    border: 0.1px solid $primarySkyBlueAlpha;
+  }
+  .section {
+    margin: 20px 0;
+
+    .sectionHeader {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .sectionBody {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 20px;
+
+      a {
+        text-decoration: none;
+
+        button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          background-color: $primarySkyBlue;
+          height: 50px;
+          width: 100%;
+          border-radius: 5px;
+          padding: 5px 10px;
+          //   padding-left: 5px;
+          //   border-left: 5px solid $primarySkyBlue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1068px) {
+  .overAllVisual {
+    width: 95%;
+    padding: 10px;
+
+    .section {
+      .sectionBody {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .overAllVisual {
+    width: 100%;
+    padding: 10px;
+
+    .section {
+      .sectionBody {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

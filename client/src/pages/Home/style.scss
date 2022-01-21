@@ -1,0 +1,82 @@
+@import './../../globalVariables';
+.home {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 100px;
+  color: $primarySkyBlue;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  .heroAtTop {
+    display: none;
+  }
+  .heroAtDown {
+    display: block;
+  }
+  .header {
+    margin-top: 50px;
+    font-size: 8em;
+    font-weight: bold;
+  }
+  .subHeader {
+    font-size: 1.7em;
+    font-weight: 600;
+  }
+  .subHeader2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    a {
+      padding: 0 2px;
+      color: $primarySkyBlue;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all;
+      &:hover {
+        color: $secondarySkyBlue;
+      }
+    }
+  }
+
+  .hero {
+    text-align: center;
+    svg {
+      font-size: 27em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+    grid-template-columns: 1fr;
+    .heroAtTop {
+      display: block;
+    }
+
+    .heroAtDown {
+      display: none;
+    }
+    .header {
+      margin-top: 0px;
+      font-size: 4em;
+    }
+    .subHeader {
+      font-size: 1.6em;
+      font-weight: 600;
+    }
+    .subHeader2 {
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+
+    .hero {
+      text-align: center;
+      svg {
+        font-size: 15em;
+      }
+    }
+  }
+}

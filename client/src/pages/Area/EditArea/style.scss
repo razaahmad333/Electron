@@ -1,0 +1,74 @@
+@import './../../../globalVariables';
+
+.editArea {
+  width: 50%;
+  padding: 10px 40px;
+  margin: 20px auto;
+  //   border: 1px solid $primarySkyBlueAlpha;
+  border-radius: 5px;
+  color: $primarySkyBlue;
+  box-shadow: 0px 0px 10px 0px $primarySkyBlueAlpha;
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin: 10px 0;
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid $primarySkyBlueAlpha;
+      border-radius: 4px;
+      caret-color: $primarySkyBlue;
+
+      color: $primarySkyBlue;
+      &:focus {
+        outline: 1.5px solid $secondarySkyBlue;
+        border-color: $secondarySkyBlue;
+      }
+    }
+
+    input[type='submit'] {
+      background-color: $primarySkyBlue;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background-color: $secondarySkyBlue;
+      }
+    }
+
+    textArea {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid $primarySkyBlueAlpha;
+      border-radius: 4px;
+      caret-color: $primarySkyBlue;
+      color: $primarySkyBlue;
+      //extend only in y direction
+      resize: vertical;
+      &:focus {
+        outline: 1.5px solid $secondarySkyBlue;
+        border-color: $secondarySkyBlue;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .editArea {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+}

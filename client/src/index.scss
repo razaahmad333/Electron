@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import './_globalVariables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Dongle', sans-serif; */
+  font-family: 'Barlow', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+body {
+  overflow-x: hidden;
+  // overflow-x:hidden
+  // background-color: red;
+}
+
+.btn {
+  background-color: $primarySkyBlue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
+  svg {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+  }
+
+  transition: 0.3s;
+  &:hover {
+    background-color: $secondarySkyBlue;
+  }
+}
+
+.btn_small {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  svg {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+  }
+}

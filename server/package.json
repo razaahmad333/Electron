@@ -1,0 +1,21 @@
+{
+  "name": "election_server",
+  "version": "1.0.0",
+  "description": "This is server for my election app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "Elections"
+  ],
+  "author": "Ahmad Raza",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "uuid": "^8.3.2"
+  }
+}

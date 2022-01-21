@@ -1,0 +1,97 @@
+@import './../../../globalVariables';
+
+.showParties {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: $primarySkyBlue;
+    .btn {
+      width: 200px;
+    }
+  }
+
+  .parties {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    .party {
+      box-shadow: 0px 0px 10px 0px $primarySkyBlueAlpha;
+
+      color: $primarySkyBlue;
+      padding: 10px;
+      //   border: 1px solid $primarySkyBlueAlpha;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 200px;
+
+      .details {
+        .name {
+          margin-bottom: 10px;
+        }
+        .desc {
+          height: 50px;
+        }
+        .leader {
+          font-weight: 600;
+        }
+        p {
+          margin: 5px 0;
+          font-size: 14px;
+        }
+      }
+      .actionLinks {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      transition: 0.3s;
+      &:hover {
+        background-color: $primarySkyBlue;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   .showParties {
+//     width: 95%;
+//     background: red;
+//     .parties {
+//       grid-template-columns: 1fr 1fr;
+//       grid-gap: 20px;
+//     }
+//   }
+// }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .showParties {
+    width: 95%;
+
+    .parties {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .showParties {
+    width: 100%;
+    // background: green;
+    .parties {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+}

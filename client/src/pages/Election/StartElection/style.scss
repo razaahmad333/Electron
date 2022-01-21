@@ -1,0 +1,110 @@
+@import './../../../globalVariables';
+
+.startElection {
+  width: 80%;
+  margin: 10px auto;
+  color: $primarySkyBlue;
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .form-group {
+    margin: 10px 0;
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid $primarySkyBlueAlpha;
+      border-radius: 4px;
+      caret-color: $primarySkyBlue;
+
+      color: $primarySkyBlue;
+      &:focus {
+        outline: 1.5px solid $secondarySkyBlue;
+        border-color: $secondarySkyBlue;
+      }
+    }
+
+    input[type='submit'] {
+      background-color: $primarySkyBlue;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background-color: $secondarySkyBlue;
+      }
+    }
+
+    textArea {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid $primarySkyBlueAlpha;
+      border-radius: 4px;
+      caret-color: $primarySkyBlue;
+      color: $primarySkyBlue;
+      //extend only in y direction
+      resize: vertical;
+      &:focus {
+        outline: 1.5px solid $secondarySkyBlue;
+        border-color: $secondarySkyBlue;
+      }
+    }
+  }
+
+  .areas {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    .area {
+      display: block;
+      background-color: transparent;
+      color: $primarySkyBlue;
+      border: 1px solid $primarySkyBlue;
+      padding: 10px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      span {
+        display: block;
+      }
+
+      .areaName {
+        text-align: start;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .voters {
+        margin-top: 5px;
+        text-align: end;
+      }
+
+      transition: 0.3s;
+    }
+
+    .selected {
+      background-color: $primarySkyBlue;
+      color: #fff;
+    }
+  }
+
+  .sectionHeader {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .startElection {
+    width: 95%;
+    .areas {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

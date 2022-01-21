@@ -1,0 +1,123 @@
+@import './../../globalVariables';
+.about {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: $primarySkyBlue;
+
+  .smile img {
+    padding-top: 100px;
+    width: 300px;
+  }
+
+  .detail {
+    padding: 50px;
+    padding-top: 80px;
+  }
+
+  .hii {
+    font-size: 4em;
+  }
+
+  .im {
+    font-size: 2em;
+  }
+
+  .listOfProp {
+    .prop {
+      .dot {
+        svg {
+          position: relative;
+          top: 5px;
+        }
+        font-size: 1.4em;
+      }
+      padding-right: 10px;
+    }
+  }
+  .name {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .aboutApp {
+    margin: 10px 0;
+    margin-bottom: 60px;
+    font-size: 1.2em;
+  }
+
+  .contactLinks {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    a {
+      font-size: 2em;
+      text-decoration: none;
+      color: $primarySkyBlue;
+    }
+  }
+}
+
+@media (max-width: 1068px) {
+  .about {
+    overflow-x: hidden;
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+    .smile {
+      text-align: center;
+      img {
+        margin: 10px 0;
+        padding-top: 30px;
+        width: 100px;
+      }
+    }
+
+    .detail {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .hii {
+      font-size: 2.5em;
+    }
+
+    .im {
+      font-size: 1.4em;
+    }
+
+    .listOfProp {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .prop {
+        .dot {
+          svg {
+            position: relative;
+            top: 5px;
+          }
+          font-size: 1.4em;
+        }
+        padding-right: 10px;
+      }
+    }
+
+    .aboutApp {
+      margin: 10px 0;
+      margin-bottom: 20px;
+      font-size: 1em;
+    }
+
+    .contactLinks {
+      width: 100vw;
+      // display: grid;
+      justify-content: space-around;
+      margin-top: 20px;
+      a {
+        font-size: 1.4em;
+      }
+    }
+    // text-align: center;
+  }
+}
