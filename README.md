@@ -24,7 +24,7 @@ A toy app for election with visualization
 
 - once that is being cloned
 
-  `cd Electron `
+  `cd electron `
 
   `cd server `
 
