@@ -22,19 +22,19 @@ A toy app for election with visualization
 
   `git clone ________paste the copied link here`
 
-* once that is being cloned
+- once that is being cloned
 
-`cd Electron `
+  `cd Electron `
 
-`cd server `
+  `cd server `
 
-`npm run dev `
+  `npm run dev `
 
-`cd .. `
+  `cd .. `
 
-`cd client `
+  `cd client `
 
-`npm start `
+  `npm start `
 
 - and here you go
 
